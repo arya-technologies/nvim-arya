@@ -30,7 +30,7 @@ return {
 		ls.filetype_extend("javascriptreact", { "html" })
 		ls.filetype_extend("typescriptreact", { "html" })
 		ls.filetype_extend("markdown", { "html" })
-		ls.filetype_extend("astro", { "html", "javascript", "typescript" })
+		-- ls.filetype_extend("astro", {  "javascript", "typescript" })
 
 		vscode.lazy_load({ paths = { "./lua/snippets" } })
 		vscode.lazy_load()
@@ -39,7 +39,7 @@ return {
 			history = true,
 			delete_check_events = "TextChanged",
 			updateevents = "TextChanged,TextChangedI",
-			enable_autosnippets = true,
+			enable_autosnippets = false,
 		})
 
 		-- hl(0, "CmpItemAbbr", { fg = "#CDD6F4" })
